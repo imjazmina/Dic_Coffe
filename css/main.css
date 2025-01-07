@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+html{
+    height: 100%;
+}
+
+body {
+    position: relative;
+    padding-bottom: 75px;
+    min-height: 100%;
+}
+
+/*NAV*/
+.header_nav {
+    background: linear-gradient(90deg, #fff, rgba(0,0,0,.6) 60%);
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: stretch;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.global_nav_item {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.global_nav_item:hover {
+    background: #fff;
+    color:#42210b;
+    transition: 0.3s;
+}
+
+.global_nav {
+    display:flex;
+    align-items: stretch;
+}
+
+.logo {
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.section_inner{
+    padding: 50px 10% 30px;
+}
+
+.key{
+    height: 500px;
+    background: center / cover no-repeat url(../imagen/sample_key.jpg);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Noto Serif',Serif;
+}
+
+.key h1{
+    font-size:2.5rem;
+}
+
+.section_title{
+    font-family:'Noto Serif', Serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+/*MENU-------*/
+
+.menu_title{
+    display: inline-block;
+    font-family: 'Noto Serif', Serif;
+    font-size: 1.5rem;
+    color: #42210b;
+    border-bottom: solid #42210b;
+    margin-bottom: 20px;
+}
+
+.center {
+    text-align: center;
+    padding: 20px;
+}
+
+.coffe_menu_image{
+    border-radius: 50%;
+    width: 20%;
+}
+
+/*MNEU RECOMENDADO*/
+.menu_list_recommended {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu_item {
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px; 
+}
+
+.menu_item_content {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    padding: 10px;
+}
+
+.menu_item_image{
+    width: 55%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/*MENU del cafe*/
+.menu_section {
+    background-image: url(../imagen/sample_menu_bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.menu_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.coffe_menu {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.coffe_menu_content {
+    width: 80%;
+    padding: 10px;
+}
+
+.coffe_menu_list_item {
+    width: 49%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 10px;
+}
+
+/*ACCESS*/
+.info {
+    display: flex;
+}
+
+.info_title {
+    width: 80px;
+}
+
+.section_title {
+    text-align: center;
+}
+
+.frame_child{
+    width: 100%;
+}
+
+/*CONCEPT*/
+.concept_inner {
+    display: flex;
+    justify-content: space-between;
+}
+.concept_content {
+    width: 60%;
+}
+
+.concept_image {
+    width: 35%;
+}
+
+/*--FOOTER--*/
+.footer{
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    background: #251e19;
+    bottom:-75px;
+    padding-bottom: 10px;
+}
+
+.footer_nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer_nav_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.footer_logo{
+    width: 80px;
+}
+
+.footer_rigth{
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+}
