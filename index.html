@@ -13,17 +13,17 @@
 <body>
 <header>
     <nav class="header_nav">
-        <a href="index.html" class="logo"><img src="imagen/sample_logo_k.png"></a>
+       <button class="logo" onclick="scrollToSection('nosotros')"><img src="imagen/sample_logo_k.png"></button>
         <ul class="global_nav">
-            <a href="index.html" class="global_nav_item">
-                <li>Home</li>
-            </a>
-            <a href="#" class="global_nav_item">
+            <button class="global_nav_item" onclick="scrollToSection('nosotros')">
+                <li>Nosotros</li>
+            </button>
+            <button class="global_nav_item" onclick="scrollToSection('menu')">
                 <li>Menu</li>
-            </a>
-            <a href="#" class="global_nav_item">
-                <li>Contact</li>
-            </a>
+            </button>
+            <button class="global_nav_item" onclick="scrollToSection('contacto')">
+                <li>Contactanos</li>
+            </button>
         </ul>
     </nav>
     <div class="key section_inner">
@@ -32,7 +32,7 @@
     </div>
 </header>
 <section>
-    <article class="section_inner">
+    <article class="section_inner" id="nosotros">
         <div class="section_title">
             <h1>Un compromiso de DIC Cafe</h1>
         </div>
@@ -47,7 +47,7 @@
     </div>
     </article>
     
-    <article class="section_inner menu_section">
+    <article class="section_inner menu_section" id="menu">
         <div class="section_title">
             <h1 class="section_title">MENU</h1>
         </div>
@@ -136,12 +136,10 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.262940140464!2d-57.58012762619371!3d-25.295368427575408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da898217c3039%3A0x7fb51ffb283a80d6!2sTorre%20de%20las%20Americas!5e0!3m2!1ses!2spy!4v1718927314223!5m2!1ses!2spy" id="map" class="frame_child" frameborder="0" style="border:0" allowfullscreen="allowfullscreen"></iframe>
             </div>
         </tr>   
-    <!--cambiar clases-->
-    <!--minimizar tamano-->
-    <!--cambiar propiedad a estatico-->
+
     <!--fondo oscuro-->
     </article>
-    <div class="container-contact100">
+    <div class="container-contact100" id="contacto">
         <div class="wrap-contact100">
             <form class="contact100-form validate-form">
                 <span class="contact100-form-title">
@@ -173,20 +171,24 @@
 <footer class="footer">
     <nav>
         <ul class="footer_nav">
-            <a href="index.html" class="footer_nav_item">
-                <li>Home</li>
-            </a>
-            <a href="#" class="footer_nav_item">
+            <button class="footer_nav_item" onclick="scrollToSection('nosotros')">
+                <li>Nosotros</li>
+            </button>
+            <button class="footer_nav_item" onclick="scrollToSection('menu')">
                 <li>Menu</li>
-            </a>
-            <a href="#" class="footer_nav_item">
-                <li>Contacto</li>
-            </a>
-            <a href="index.html" class="footer_nav_item">
-                <li><img src="imagen/sample_logo_w.png" alt="logo" class="footer_logo"></li>
+            </button>
+            <button class="footer_nav_item" onclick="scrollToSection('contacto')">
+                <li>Contactanos</li>
+            </button>
+            <button class="footer_nav_item" onclick="scrollToSection('nosotros')">
+                <li><img src="imagen/sample_logo_w.png" alt="logo" class="footer_logo">
+                </li>
+            </button>   
         </ul>
     </nav>
     <p class="footer_rigth">© DIVE INTO CODE Corp. All RIGHTS RESERVED.</p>    
 </footer>
+<script src="/script/script.js">
+</script>
 </body>
 </html>

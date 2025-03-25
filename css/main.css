@@ -9,6 +9,7 @@ body {
     padding-bottom: 75px;
     min-height: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /*NAV*/
